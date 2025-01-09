@@ -89,7 +89,7 @@ Could you please create a table to count the number of customers broken down by 
 */
 select store_id, active, count(*) as customer_count
 from customer
-group by store_id, active;
+group by active, store_id;
 
 /*
 12.	Can you pull for me a list of each film we have in inventory?
